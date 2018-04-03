@@ -1,0 +1,32 @@
+.buttonClicks{
+	cursor: pointer;
+	
+	border: 2px solid black;
+	padding :3px ;
+	width:200px;
+	 text-align: center;
+}
+.buttonClicks:hover{
+	background:gray;
+	color:white;
+}
+.plusMinus{
+	cursor: pointer;
+	
+	border: 2px solid black;
+	padding :3px ;
+	width:20px;
+	 text-align: center;
+}
+.plusMinus:hover{
+	background:gray;
+	color:white;
+	
+}
+.align {
+    display: inline-block;
+	width: 150px;
+ }
+ div{
+	 display: inline-block;
+ }
