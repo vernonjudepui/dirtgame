@@ -10,7 +10,7 @@ var dirtWorker=new BigNumber(0);
 var metalWorker=new BigNumber(0);
 var magicWorker=new BigNumber(0);
 function addWorker(){
-	if (dirt.comparedTo(workersCost1) >=0 && magic.comparedTo(workersCost2) >= 0{
+	if (dirt.comparedTo(workersCost1) >=0 && magic.comparedTo(workersCost2) >= 0){
 		dirt.minus(workersCost1);
 		magic.minus(workersCost2);
 		
@@ -18,34 +18,34 @@ function addWorker(){
 		availableWorkers.plus(1);
 		workersCost1.multipliedBy(4);
 		workersCost2.multipliedBy(4);
-		document.getElementById('Dirt').innerHTML = dirt;
-		document.getElementById('Magic').innerHTML = magic;
-		document.getElementById('Workers').innerHTML = workers;
-		document.getElementById('workerCost1').innerHTML = workersCost1;
-		document.getElementById('workerCost2').innerHTML = workersCost2;
-		document.getElementById('availWorkers').innerHTML = availableWorkers;
+		document.getElementById('Dirt').innerHTML = dirt.toNumber();
+		document.getElementById('Magic').innerHTML = magic.toNumber();
+		document.getElementById('Workers').innerHTML = workers.toNumber();
+		document.getElementById('workerCost1').innerHTML = workersCost1.toNumber();
+		document.getElementById('workerCost2').innerHTML = workersCost2.toNumber();
+		document.getElementById('availWorkers').innerHTML = availableWorkers.toNumber();
 	}
 	
 
 
 }
 function addDirt(num){
-	dirt=dirt+num;
-	document.getElementById('Dirt').innerHTML = dirt;
+	dirt.add(num);
+	document.getElementById('Dirt').innerHTML = dirt.toNumber();
 }
 function getDirt(){
-	var totalDirt=0
-	totalDirt= dirtWorker/10
-	return totalDirt
+	var totalDirt= new bigNumber(0);
+	totalDirt.add(dirtWorker).dividedBy(10);
+	return totalDirt;
 }
 function addAvailWorker(num){
-	if (availableWorkers>0){
+	if (availableWorkers.comparedTo(0)>0){
 		switch(num){
 				case 1: // dirt
-				dirtWorker+=1
-				availableWorkers-=1
-				document.getElementById('availWorkers').innerHTML = availableWorkers;
-				document.getElementById('dirtWorkers').innerHTML = dirtWorker;
+				dirtWorker.add(1);
+				availableWorkers.minus(1);
+				document.getElementById('availWorkers').innerHTML = availableWorkers.toNumber();
+				document.getElementById('dirtWorkers').innerHTML = dirtWorker.toNumber();
 		}
 		
 		
