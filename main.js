@@ -36,7 +36,7 @@ function addDirt(num){
 function getDirt(){
 	var totalDirt= new bigNumber(0);
 	totalDirt.add(dirtWorker).dividedBy(10);
-	return totalDirt;
+	return totalDirt.toNumber();
 }
 function addAvailWorker(num){
 	if (availableWorkers.comparedTo(0)>0){
