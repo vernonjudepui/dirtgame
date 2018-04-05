@@ -1,5 +1,5 @@
  dirt=new BigNumber(5)
- magic= new BigNumber(1
+ magic= new BigNumber(1)
  metal=new BigNumber(0)
  workers=new BigNumber(0)
 timemonium=new BigNumber(0)
