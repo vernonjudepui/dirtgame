@@ -30,19 +30,19 @@ function addWorker(){
 
 }
 function addDirt(num){
-	dirt.add(num);
+	dirt.plus(num);
 	document.getElementById('Dirt').innerHTML = dirt.toNumber();
 }
 function getDirt(){
 	totalDirt= new bigNumber(0);
-	totalDirt.add(dirtWorker).dividedBy(10);
+	totalDirt.plus(dirtWorker).dividedBy(10);
 	return totalDirt.toNumber();
 }
 function addAvailWorker(num){
 	if (availableWorkers.comparedTo(0)>0){
 		switch(num){
 				case 1: // dirt
-				dirtWorker.add(1);
+				dirtWorker.plus(1);
 				availableWorkers.minus(1);
 				document.getElementById('availWorkers').innerHTML = availableWorkers.toNumber();
 				document.getElementById('dirtWorkers').innerHTML = dirtWorker.toNumber();
