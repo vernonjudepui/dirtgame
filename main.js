@@ -1,3 +1,4 @@
+import {BigNumber} from 'bignumber.js'
 var dirt=new BigNumber(5);
 var magic= new BigNumber(1);
 var metal=new BigNumber(0);
