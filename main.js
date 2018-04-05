@@ -1,14 +1,14 @@
- dirt=new BigNumber(5)
- magic= new BigNumber(1)
- metal=new BigNumber(0)
- workers=new BigNumber(0)
-timemonium=new BigNumber(0)
- availableWorkers=new BigNumber(0)
- workersCost1= new BigNumber(5)
- workersCost2= new BigNumber(1)
- dirtWorker=new BigNumber(0)
- metalWorker=new BigNumber(0)
- magicWorker=new BigNumber(0)
+var dirt=new BigNumber(5);
+var magic= new BigNumber(1);
+var metal=new BigNumber(0);
+var workers=new BigNumber(0);
+var timemonium=new BigNumber(0);
+var availableWorkers=new BigNumber(0);
+var workersCost1= new BigNumber(5);
+var workersCost2= new BigNumber(1);
+var dirtWorker=new BigNumber(0);
+var metalWorker=new BigNumber(0);
+var magicWorker=new BigNumber(0);
 function addWorker(){
 	if (dirt.comparedTo(workersCost1) >=0 && magic.comparedTo(workersCost2) >= 0){
 		dirt.minus(workersCost1);
@@ -34,7 +34,7 @@ function addDirt(num){
 	document.getElementById('Dirt').innerHTML = dirt.toNumber();
 }
 function getDirt(){
-	totalDirt= new bigNumber(0);
+	var totalDirt= new bigNumber(0);
 	totalDirt.plus(dirtWorker).dividedBy(10);
 	return totalDirt.toNumber();
 }
